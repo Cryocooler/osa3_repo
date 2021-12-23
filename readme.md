@@ -1,1 +1,1 @@
-# Dedicated repository for part3 
+# Fullstack Course Part 3: Phonebook backend deployable to Heroku
