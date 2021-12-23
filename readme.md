@@ -1,1 +1,1 @@
-# Fullstack Course Part 3: Phonebook backend deployable to Heroku
+# Fullstack Course Part 3: Phonebook backend deployable to Heroku with Frontend
