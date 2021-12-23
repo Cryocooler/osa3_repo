@@ -1,0 +1,3 @@
+DELETE https://fathomless-earth-10595.herokuapp.com/api/persons/4
+Content-Type: application/json
+
