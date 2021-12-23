@@ -1,0 +1,30 @@
+{
+  "name": "phonebook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cryocooler/osa3_repo.git"
+  },
+  "author": "Sahin Dursun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Cryocooler/osa3_repo/issues"
+  },
+  "homepage": "https://github.com/Cryocooler/osa3_repo#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "express-timestamp": "^0.1.4",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
