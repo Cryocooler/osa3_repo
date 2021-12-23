@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "build:ui": "rm -rf build && cd /Users/sahindursun/staging/fullstack/osa2/phonebook/ && npm run build && cp -r build /Users/sahindursun/staging/osa3_repo",
+    "build:ui": "rm -rf build && cd /Users/sahindursun/staging/fullstack/osa2/phonebook/ && npm run build && cp -r build /Users/sahindursun/staging/phonebook_backend",
     "deploy": "git push heroku HEAD:master",
     "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push && npm run deploy",
     "logs:prod": "heroku logs --tail"
@@ -26,6 +26,7 @@
     "cors": "^2.8.5",
     "express": "^4.17.2",
     "express-timestamp": "^0.1.4",
+    "mongoose": "^6.1.3",
     "morgan": "^1.10.0"
   },
   "devDependencies": {
