@@ -1,8 +1,8 @@
-POST https://fathomless-earth-10595.herokuapp.com/api/persons
+POST http://localhost:3001/api/persons/
 Content-Type: application/json
 
 {   
     
-    
+    "name": "Carl",
     "number": "131313131"
 }

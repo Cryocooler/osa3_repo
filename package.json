@@ -24,6 +24,7 @@
   "homepage": "https://github.com/Cryocooler/osa3_repo#readme",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
     "express": "^4.17.2",
     "express-timestamp": "^0.1.4",
     "mongoose": "^6.1.3",
