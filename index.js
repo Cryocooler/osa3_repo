@@ -67,12 +67,13 @@ app.get('/api/persons', (request,response) => {
 })
 
 
-// app.get('/info', (request, response) =>  {
-//   const personCount = persons.length
-//   response.send(`Phonebook has info for ${personCount} people 
-//   <br>${request.timestamp}</br>`)
-
-// })
+app.get('/info', (request, response) =>  {
+  Person.find({}).then(persons => {
+    response.send(`Phonebook has info for ${persons.length} people 
+    <br>${request.timestamp}</br>`)
+  })
+ 
+})
 
 app.get('/api/persons/:id', (request, response, next) => {
   // MongoDB data fetching
@@ -161,7 +162,7 @@ app.put('/api/persons/:id', (req, res, next) => {
 
   Person.findByIdAndUpdate(req.params.id, person, { new: true })
     .then(updatedPerson => {
-        response.json(updatedPerson)
+        res.json(updatedPerson)
     })
     .catch(error => next(error))
   
