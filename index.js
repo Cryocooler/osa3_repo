@@ -27,7 +27,7 @@ const errorHandler = (error, request, response, next) => {
   if (error.name === 'CastError') {
     return response.status(400).send({ error: 'malformatted id' })
   } else if (error.name === 'ValidationError') {
-    return response.status(409).send({error: 'unique constraint violation'})
+    return response.status(409).send(error)
   }
 
   next(error)
@@ -164,7 +164,7 @@ app.put('/api/persons/:id', (req, res, next) => {
       number: body.number
     }
 
-  Person.findByIdAndUpdate(req.params.id, person, { new: true })
+  Person.findByIdAndUpdate(req.params.id, person, { new: true, runValidators: true })
     .then(updatedPerson => {
         res.json(updatedPerson)
     })
